@@ -22,22 +22,22 @@
 		<div class="form-group">
 			<form:label path="name">Expense Name:</form:label>
 			<form:errors class="text-danger" path="name"/>
-			<form:input class="form-control" path="name" value="${expense.name}"/>
+			<form:input class="form-control" path="name"/>
 		</div>
 		<div class="form-group">
 			<form:label path="vendor">Vendor:</form:label>
 			<form:errors class="text-danger" path="vendor"/>
-			<form:input class="form-control" path="vendor" value="${expense.vendor}"/>
+			<form:input class="form-control" path="vendor"/>
 		</div>
 		<div class="form-group">
 			<form:label path="amount">Amount:</form:label>
 			<form:errors class="text-danger" path="amount"/>
-			<form:input class="form-control" path="amount" type="number" min="0" step=".01" value="${expense.amount}"/>
+			<form:input class="form-control" path="amount" type="number" min="0" step=".01"/>
 		</div>
 		<div class="form-group">
 			<form:label path="description">Description:</form:label>
 			<form:errors class="text-danger" path="description"/>
-			<form:textarea class="form-control" path="description" value="${expense.description}"/>
+			<form:textarea class="form-control" path="description"/>
 		</div>
 		<input type="submit" class="btn btn-primary my-3" value="Submit"/>
 	</form:form>
